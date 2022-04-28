@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Msg = require('./models/messages');
 const io = require('socket.io')(3000,{
     cors: {
-      origin: "103.252.27.178",
+      origin: "https://chat-test-2007.netlify.app/",
       methods: ["GET", "POST"]
     }
   });
