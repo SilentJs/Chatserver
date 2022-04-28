@@ -1,11 +1,13 @@
 const mongoose = require('mongoose');
 const Msg = require('./models/messages');
-const io = require('socket.io')(3000,{
+const io = require('socket.io')(httpServer,{
     cors: {
       origin: "https://chat-test-2007.netlify.app/",
       methods: ["GET", "POST"]
     }
   });
+httpServer.listen(3000);
+
 const mongoDB = 'mongodb+srv://kvdrdo-chat:FXf6zVwZNpAG9nab@cluster0.lqt4d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
