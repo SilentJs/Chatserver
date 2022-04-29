@@ -2,5 +2,5 @@
 [[headers]]
   for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "https://chat-test-2007.netlify.app/"
-    Vary = "origin"
+    Access-Control-Allow-Origin = "*"
+    Methods = GET,POST,OPTIONS
