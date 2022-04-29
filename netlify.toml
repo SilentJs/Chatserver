@@ -1,7 +1,4 @@
-[build]
-  publish = "site"
-  functions = "lambda"
-  Command = "npm run build:lambda"
+
 [[headers]]
   for = "/*"
     [headers.values]
